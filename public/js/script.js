@@ -18,6 +18,7 @@ const getDrumArrayByName = (drumArrayName) => {
 };
 
 const toggleDrum = (drumArrayName, indexNum) => {
+  debugger;
   /* We want this function to flipp the correct array index. 
   In order to do this, we need to be able to select the correct drum name, thats why we
   used the switch statment above.  
@@ -35,6 +36,8 @@ node test requirements. */
 };
 
 const clear = (drumArrayName) => {
+  debugger;
+
   const drums = getDrumArrayByName(drumArrayName);
   if (drums) {
     drums.fill(false);
@@ -43,6 +46,8 @@ const clear = (drumArrayName) => {
 
 
 const invert = (drumArrayName) => {
+  debugger;
+
   const drums = getDrumArrayByName(drumArrayName);
   if (!drums) {
     return;
@@ -50,4 +55,8 @@ const invert = (drumArrayName) => {
   for (let i = 0; i < drums.length; i++) {
     drums[i] = !drums[i];
   }
+}
+
+const getNeighborPads = (x, y, size) => {
+  
 }
